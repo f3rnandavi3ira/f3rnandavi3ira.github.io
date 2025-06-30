@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 
 <head>
-    <title>Fernanda Vieira | Seja um Apoiador</title>
+    <title>Fernanda Vieira | Formas de Apoio</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -65,275 +65,89 @@
     </header>
 
     <div class="main-wrapper">
-        <section class="cta-section theme-bg-light py-5">
+        <section class="cta-section theme-bg-light py-3">
             <div class="container text-center single-col-max-width">
-                <h2 class="heading">Seja um Apoiador</h2>
-                <div class="intro">
-                    <p>Você pode contribuir de várias formas para minha jornada acadêmica na Bélgica. Cada apoio, seja financeiro ou compartilhando minha história, me aproxima desse sonho!</p>
+                <h2 class="heading mb-2" style="font-size: 1.6rem;">Como você pode ajudar?</h2>
+                <!-- Barra de progresso compacta -->
+                <div class="mb-2" style="max-width: 280px; margin: 0 auto;">
+                    <div class="progress-container">
+                        <div class="progress-bar" id="donation-progress-bar" style="width: 0%">0%</div>
+                    </div>
+                    <p class="mt-1 mb-0" style="font-size: 0.85rem;">
+                        <strong id="donation-collected">R$ 0,00</strong> de 
+                        <strong id="donation-total">R$ 0,00</strong>
+                    </p>
                 </div>
             </div>
         </section>
 
-        <section class="px-3 py-5 p-md-5">
+        <section class="px-2 py-2">
             <div class="container">
-
-                <!-- Progresso da Arrecadação -->
-                <div class="mb-5 text-center">
-                <h3 class="mb-3">Progresso da Arrecadação</h3>
-                <div class="progress-container">
-                    <div class="progress-bar" id="donation-progress-bar" style="width: 0%">0%</div>
-                </div>
-                <p class="mt-2">
-                    <strong id="donation-collected">R$ 0,00</strong> arrecadados de 
-                    <strong id="donation-total">R$ 0,00</strong>
-                </p>
-                <p>Faltam <strong id="donation-remaining">R$ 0,00</strong> para a meta!</p>
-                </div>
-
-                <div class="row">
-                    <!-- Doação Direta -->
-                    <div class="col-md-6 mb-4">
-                        <div class="donation-method text-center">
-                        <i class="fas fa-donate"></i>
-                        <h3>Doação Direta</h3>
-                        <p>Contribua com qualquer valor através dos seguintes métodos:</p>
-        
-                            <!-- Seção PIX compacta -->
-                            <div class="mt-4">
-                                <h5><i class="fas fa-qrcode me-2"></i>PIX</h5>
-                                <div class="pix-box bg-light p-3 rounded d-inline-block">
-                                    <code class="fs-5">11942157562</code>
-                                    <button class="btn btn-sm btn-primary ms-2" onclick="copyPixKey()">
-                                        <i class="fas fa-copy me-1"></i>Copiar
-                                    </button>
-                                    <div id="pixCopyMessage" class="mt-2" style="display: none;"></div>
-                                </div>
-                                <img src="assets/images/photos/qrcode-pix.jpeg" alt="QR Code PIX" class="qr-code img-fluid mt-2" style="max-width: 150px;">
-                            </div>
-                            
-                            <!-- Seção Wise -->
-                            <div class="mt-4">
-                                <h5><i class="fas fa-globe me-2"></i>Transferência Internacional (Wise)</h5>
-                                <div class="wise-box bg-light p-3 rounded">
-                                    <p class="mb-1"><strong>WiseTag:</strong> @fernandav1192</p>
-                                    <p class="mb-2"><small>Ou use os dados bancários internacionais abaixo</small></p>
-                                    <a href="https://wise.com/pay/me/fernandav1192" 
-                                    class="btn btn-success btn-sm" 
-                                    target="_blank">
-                                        <i class="fas fa-external-link-alt me-1"></i>Doar via Wise
-                                    </a>
-                                </div>
-                            </div>
-                            
-                            <!-- Seção Bancária -->
-                            <div class="mt-4">
-                                <h5><i class="fas fa-university me-2"></i>Dados Bancários</h5>
-                                <div class="bank-details bg-light p-3 rounded text-start">
-                                    <p class="mb-1"><strong>Banco:</strong> 380 - PicPay Serviços S.A</p>
-                                    <p class="mb-1"><strong>Agência:</strong> 0001</p>
-                                    <p class="mb-1"><strong>Conta:</strong> 27044336-3</p>
-                                    <p class="mb-1"><strong>Titular:</strong> Fernanda Vieira de Oliveira</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Compre Produtos -->
-                    <div class="col-md-6 mb-4">
-                        <div class="donation-method text-center">
-                            <i class="fas fa-shopping-bag"></i>
-                            <h3>Compre Meus Produtos</h3>
-                            <p>Adquira meus produtos e serviços, todo o valor será investido no intercâmbio.</p>
-                            
-                            <div class="row mt-4">
-                            <!-- Workshop (Destaque) -->
-                            <div class="col-md-6 mb-3">
-                                <div class="product-card border-primary">
-                                    <div class="coming-soon-overlay">EM BREVE</div>
-                                    <span class="badge bg-danger position-absolute top-0 end-0">NOVO</span>
-                                    <!--<img src="assets/images/products/workshop.jpg" class="img-fluid">-->
-                                    <h5>Workshop Online <i class="fas fa-bolt text-warning"></i></h5>
-                                    <p>"Introdução à Análise de Dados com Python"</p>
-                                    <!--<a href="#" class="btn btn-primary w-100">Garanta sua vaga</a>-->
-                                    <button class="btn btn-sm btn-outline-dark" disabled>Disponível em Junho</button>
-                                </div>
-                            </div>
-                            
-                            <!-- Bolos (Secundário) -->
-                            <div class="col-md-6 mb-3">
-                                <div class="product-card">
-                                    <div class="coming-soon-overlay">EM BREVE</div>
-                                    <!--<img src="assets/images/products/bazar.jpg" class="img-fluid">-->
-                                    <h5>Bazar Online <i class="fas fa-store"></i></h5>
-                                    <p>Joias, roupas, instrumentos e mais</p>
-                                    <!--<a href="URL_DA_PAGINA_EXTERNA" class="btn btn-outline-primary w-100" target="_blank">
-                                        Visitar bazar
-                                    </a>-->
-                                    <button class="btn btn-sm btn-outline-dark" disabled>Disponível em Julho</button>
-                                </div>
-                            </div>
-                            
-                            <!-- E-book (Em breve) -->
-                            <div class="col-md-6 mb-3">
-                                <div class="product-card opacity-75">
-                                    <div class="coming-soon-overlay">EM BREVE</div>
-                                    <!--<img src="assets/images/products/ebook.jpg" class="img-fluid">-->
-                                    <h5>E-book</h5>
-                                    <p>Guia de Machine Learning</p>
-                                    <button class="btn btn-sm btn-outline-dark" disabled>Disponível em Julho</button>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 mb-3">
-                                <div class="product-card opacity-75">
-                                    <div class="coming-soon-overlay">EM BREVE</div>
-                                    <!--<img src="assets/images/products/curso.jpg" class="img-fluid">-->
-                                    <h5>Curso Online</h5>
-                                    <p>Guia de Machine Learning</p>
-                                    <button class="btn btn-sm btn-outline-dark" disabled>Disponível em Julho</button>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        </div>
-                    </div>
-
-                    <!-- Adicione esta seção antes do rodapé na página invest.html -->
-                    <section id="financial-proof" class="financial-proof-section py-5 bg-light">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-8 mx-auto text-center">
-                                    <h2 class="mb-4"><i class="fas fa-shield-alt me-2"></i>Prova Financeira - Opção Segura</h2>
-                                    <div class="card shadow-sm">
-                                        <div class="card-body">
-                                            <div class="alert alert-info text-start">
-                                                <h5><i class="fas fa-university me-2"></i>Transferência Direta para a Faculdade</h5>
-                                                <p class="mb-3">Para sua maior segurança, o valor é transferido diretamente para a conta da Haute École de Liège (HEPL), com contrato de garantia.</p>
-                                                
-                                                <div class="benefits-list">
-                                                    <div class="d-flex mb-2">
-                                                        <div class="me-3 text-primary"><i class="fas fa-check-circle"></i></div>
-                                                        <div>
-                                                            <strong>Segurança Máxima</strong> - Seu dinheiro fica sob custódia da instituição até minha chegada
-                                                        </div>
-                                                    </div>
-                                                    <div class="d-flex mb-2">
-                                                        <div class="me-3 text-primary"><i class="fas fa-file-contract"></i></div>
-                                                        <div>
-                                                            <strong>Contrato Personalizado</strong> - Definimos juntos os termos de devolução
-                                                        </div>
-                                                    </div>
-                                                    <div class="d-flex mb-2">
-                                                        <div class="me-3 text-primary"><i class="fas fa-hand-holding-usd"></i></div>
-                                                        <div>
-                                                            <strong>Comprovante Válido</strong> - A transferência serve como prova financeira para o visto
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                    <!-- Versão alternativa mais positiva (escolha a que preferir) -->
-                    <div class="solution-card bg-opacity-10 p-4 rounded-3 border-start border-5 border mb-4">
-                        <div class="d-flex">
-                            <div class="me-3 text-success">
-                               
-                            </div>
-                            <div>
-                                <h5 class="text-success">Solução Segura para Não Repetir 2024</h5>
-                                <p>Encontrei uma forma de destravar meu processo enquanto continuo arrecadando:</p>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="d-flex mb-2">
-                                            <p class="badge btn-section-financial fs-5 me-2">1</p>
-                                            <div>
-                                                <strong>Você transfere</strong> para a HEPL<br>
-                                                <small>(valor integral)</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="d-flex mb-2">
-                                            <p class="badge btn-section-financial fs-5 me-2">2</p>
-                                            <div>
-                                                <strong>Dou entrada no visto</strong> em seguida<br>
-                                                <small>com o comprovante oficial</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="d-flex mb-2">
-                                            <p class="badge btn-section-financial fs-5 me-2">3</p>
-                                            <div>
-                                                <strong>Continuo vendendo</strong> meus produtos<br>
-                                                <small>bolos, e-books, cursos, workshop</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="d-flex mb-2">
-                                            <p class="badge btn-section-financial fs-5 me-2">4</p>
-                                            <div>
-                                                <strong>Devolvo conforme</strong> contrato<br>
-                                                <small>com juros ou benefícios</small>
-                                            </div>
-                                        </div>
+                <div class="row g-2">
+                    <!-- Card Doação Direta -->
+                    <a href="doacao.html" class="col-12 col-md-4 text-decoration-none">
+                        <div class="card option-card">
+                            <div class="card-body">
+                                <div class="icon-container">
+                                    <div class="icon-circle bg-primary">
+                                        <i class="fas fa-donate fa-lg text-white"></i>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-
-                                            <div class="process-steps mt-4">
-                                                <h5 class="text-start mb-3"><i class="fas fa-list-ol me-2"></i>Como Funciona:</h5>
-                                                <ol class="text-start">
-                                                    <li class="mb-2">Você entra em contato para discutirmos os termos</li>
-                                                    <li class="mb-2">Preparamos um contrato personalizado com as condições acordadas</li>
-                                                    <li class="mb-2">Você transfere o valor diretamente para a conta da HEPL</li>
-                                                    <li class="mb-2">A faculdade emite um comprovante oficial da transferência</li>
-                                                    <li class="mb-2">Ao chegar na Bélgica, a HEPL me repassa o valor</li>
-                                                    <li class="mb-2">Eu devolvo a você conforme estabelecido no contrato</li>
-                                                </ol>
-                                            </div>
-
-                                            <div class="cta-buttons mt-5">
-                                                <a href="https://wa.me/5511942157562?text=Quero%20saber%20mais%20sobre%20a%20transferência%20para%20a%20faculdade" 
-                                                class="btn btn-success" target="_blank">
-                                                    <i class="fab fa-whatsapp me-2"></i>Falar no WhatsApp
-                                                </a>
-                                            </div>
-                                        </div>
+                                <div class="card-content">
+                                    <div class="card-title">
+                                        Doação Direta
+                                        <span class="card-arrow"><i class="fas fa-chevron-right"></i></span>
                                     </div>
+                                    <p class="card-desc">Contribuição rápida via PIX, transferência ou Wise</p>
                                 </div>
                             </div>
                         </div>
-                    </section>
-                    
-                    <!-- Contato -->
-                    <div class="col-12 mt-5">
-                        <div class="donation-method text-center">
-                            <i class="fas fa-external-link-alt"></i>
-                            <h3>Entre em Contato</h3>
-                            <p>Você pode me encontrar através das minhas redes sociais ou por mensagem direta!</p>
-                            
-                            <div class="share-buttons mt-4">
-                                <a href="https://wa.me/qr/5WQ3VLWBUMKRK1" class="btn btn-success">
-                                    <i class="fab fa-whatsapp me-2"></i>WhatsApp
-                                </a>
-                                <a href="mailto:nanda14.fv@gmail.com" class="btn btn-primary">
-                                    <i class="fas fa-envelope me-2"></i>E-mail
-                                </a>
-                                <a href="https://www.instagram.com/vieira_ferr/profilecard/?igsh=MWZjMDBzMGVnN3Z0dQ==" class="btn btn-danger">
-                                    <i class="fab fa-instagram me-2"></i>Instagram
-                                </a>
-                                <a href="https://www.linkedin.com/in/fernanda-vieira-de-oliveira/" class="btn btn-dark">
-                                    <i class="fab fa-linkedin-in me-2"></i>LinkedIn
-                                </a>
+                    </a>
+
+                    <!-- Card Produtos -->
+                    <a href="produtos.html" class="col-12 col-md-4 text-decoration-none">
+                        <div class="card option-card">
+                            <div class="card-body">
+                                <div class="icon-container">
+                                    <div class="icon-circle bg-success">
+                                        <i class="fas fa-shopping-bag fa-lg text-white"></i>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-title">
+                                        Comprar Produtos
+                                        <span class="card-arrow"><i class="fas fa-chevron-right"></i></span>
+                                    </div>
+                                    <p class="card-desc">Workshops, cursos e produtos físicos</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
+
+                    <!-- Card Investidores -->
+                    <a href="investidores.html" class="col-12 col-md-4 text-decoration-none">
+                        <div class="card option-card">
+                            <div class="card-body">
+                                <div class="icon-container">
+                                    <div class="icon-circle bg-purple">
+                                        <i class="fas fa-handshake fa-lg text-white"></i>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-title">
+                                        Parceria Empresarial
+                                        <span class="card-arrow"><i class="fas fa-chevron-right"></i></span>
+                                    </div>
+                                    <p class="card-desc">Solução segura com contrato para empresas e investidores</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
+        </section>
+    </div>
+
             <div class="text-center mt-5">
                 <a href="index.html" class="text-muted">
                     <i class="fas fa-arrow-left me-1"></i> Revisar detalhes do intercâmbio

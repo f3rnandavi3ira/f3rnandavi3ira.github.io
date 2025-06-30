@@ -2591,3 +2591,19 @@ body {
             text-align: center;
         }
 
+/* Estilo para o botão de voltar */
+.btn-voltar {
+    position: relative;
+    padding-left: 2.5rem;
+    transition: all 0.3s;
+}
+.btn-voltar::before {
+    content: "←";
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.btn-voltar:hover {
+    transform: translateX(-5px);
+}

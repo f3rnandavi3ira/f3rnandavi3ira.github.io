@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Fernanda Vieira | Seja um Apoiador</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apoie a jornada de intercâmbio de Fernanda Vieira na Bélgica">
+    <meta name="author" content="Fernanda Vieira">
+    <link rel="shortcut icon" href="assets/images/icons/fenix.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <script defer src="assets/fontawesome/js/all.js"></script>
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme-9.css">
+    <link id="theme-style" rel="stylesheet" href="assets/css/invest.css">
+</head>
+
+<body>
+    <header class="header text-center">
+        <div class="force-overflow">
+            <h1 class="blog-name pt-lg-4 mb-0"><a class="no-text-decoration" href="index.html">Fernanda Vieira</a></h1>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation"
+                    aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navigation" class="collapse navbar-collapse flex-column">
+                    <div class="profile-section pt-3 pt-lg-0">
+                        <img class="profile-image mb-3 rounded-circle mx-auto" src="assets/images/photos/fernanda_profile.jpeg"
+                            alt="image">
+                        <div class="bio mb-3" id="apresentation" data-translate="true">Vem comigo rumo à Bélgica! Seu apoio faz toda a diferença!</div>
+                        <ul class="social-list list-inline py-2 mx-auto">
+                            <li class="list-inline-item"><a class="whatsapp" href="https://wa.me/5511942157562" target="_blank"><i
+                                        class="fab fa-whatsapp fa-fw fa-lg"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/fernanda-vieira-de-oliveira/"><i
+                                        class="fab fa-linkedin-in fa-fw"></i></a></li>
+                            <li class="list-inline-item"><a href="https://github.com/f3rnandavi3ira"><i
+                                        class="fa-brands fa-github"></i></a></li>
+                            <li class="list-inline-item"><a class="instagram" href="https://www.instagram.com/vieira_ferr/profilecard/?igsh=MWZjMDBzMGVnN3Z0dQ=="><i
+                                        class="fab fa-instagram fa-fw fa-lg"></i></a></li>
+                        </ul>
+                        <hr>
+                    </div>
+                    <ul class="navbar-nav flex-column text-start">
+                        <li class="nav-item scrollto">
+                            <a class="nav-link" href="index.html"><i class="fas fa-plane me-2"></i>
+                            <span id="resume" data-translate="true">Intercâmbio</span></a>
+                        </li>
+                        <li class="nav-item scrollto">
+                            <a class="nav-link" href="about_me.html"><i class="fas fa-scroll me-2"></i>
+                            <span id="education" data-translate="true">Minha Trajetória</span></a>
+                        </li>
+                        <li class="nav-item scrollto">
+                            <a class="nav-link" href="projects.html"><i class="fas fa-laptop-code fa-fw me-2"></i>
+                            <span id="projects" data-translate="true">Projetos</span></a>
+                        </li>
+                        <li class="nav-item scrollto">
+                            <a class="nav-link active" href="invest.html"><i class="fas fa-hand-holding-heart fa-fw me-2"></i>
+                            <span id="support" data-translate="true">Seja um Apoiador</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-wrapper">
+        <!-- Botão de Voltar -->
+        <div class="container pt-3">
+            <a href="invest.html" class="text-muted text-decoration-none small">
+                <i class="fas fa-chevron-left me-1"></i> Voltar ao menu de opções
+            </a>
+        </div>
+
+        <section class="px-3 py-5 p-md-5">
+            <div class="container">
+
+                <!-- Progresso da Arrecadação -->
+                <div class="mb-5 text-center">
+                <h3 class="mb-3">Progresso da Arrecadação</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" id="donation-progress-bar" style="width: 0%">0%</div>
+                </div>
+                <p class="mt-2">
+                    <strong id="donation-collected">R$ 0,00</strong> arrecadados de 
+                    <strong id="donation-total">R$ 0,00</strong>
+                </p>
+                <p>Faltam <strong id="donation-remaining">R$ 0,00</strong> para a meta!</p>
+                </div>
+
+                <div class="row">
+                    <!-- Doação Direta -->
+                    <div class="col-md-6 mb-4">
+                        <div class="donation-method text-center">
+                        <i class="fas fa-donate"></i>
+                        <h3>Doação Direta</h3>
+                        <p>Contribua com qualquer valor através dos seguintes métodos:</p>
+        
+                            <!-- Seção PIX compacta -->
+                            <div class="mt-4">
+                                <h5><i class="fas fa-qrcode me-2"></i>PIX</h5>
+                                <div class="pix-box bg-light p-3 rounded d-inline-block">
+                                    <code class="fs-5">11942157562</code>
+                                    <button class="btn btn-sm btn-primary ms-2" onclick="copyPixKey()">
+                                        <i class="fas fa-copy me-1"></i>Copiar
+                                    </button>
+                                    <div id="pixCopyMessage" class="mt-2" style="display: none;"></div>
+                                </div>
+                                <img src="assets/images/photos/qrcode-pix.jpeg" alt="QR Code PIX" class="qr-code img-fluid mt-2" style="max-width: 150px;">
+                            </div>
+                            
+                            <!-- Seção Wise -->
+                            <div class="mt-4">
+                                <h5><i class="fas fa-globe me-2"></i>Transferência Internacional (Wise)</h5>
+                                <div class="wise-box bg-light p-3 rounded">
+                                    <p class="mb-1"><strong>WiseTag:</strong> @fernandav1192</p>
+                                    <p class="mb-2"><small>Ou use os dados bancários internacionais abaixo</small></p>
+                                    <a href="https://wise.com/pay/me/fernandav1192" 
+                                    class="btn btn-success btn-sm" 
+                                    target="_blank">
+                                        <i class="fas fa-external-link-alt me-1"></i>Doar via Wise
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <!-- Seção Bancária -->
+                            <div class="mt-4">
+                                <h5><i class="fas fa-university me-2"></i>Dados Bancários</h5>
+                                <div class="bank-details bg-light p-3 rounded text-start">
+                                    <p class="mb-1"><strong>Banco:</strong> 380 - PicPay Serviços S.A</p>
+                                    <p class="mb-1"><strong>Agência:</strong> 0001</p>
+                                    <p class="mb-1"><strong>Conta:</strong> 27044336-3</p>
+                                    <p class="mb-1"><strong>Titular:</strong> Fernanda Vieira de Oliveira</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contato -->
+                    <div class="col-12 mt-5">
+                        <div class="donation-method text-center">
+                            <i class="fas fa-external-link-alt"></i>
+                            <h3>Entre em Contato</h3>
+                            <p>Você pode me encontrar através das minhas redes sociais ou por mensagem direta!</p>
+                            
+                            <div class="share-buttons mt-4">
+                                <a href="https://wa.me/qr/5WQ3VLWBUMKRK1" class="btn btn-success">
+                                    <i class="fab fa-whatsapp me-2"></i>WhatsApp
+                                </a>
+                                <a href="mailto:nanda14.fv@gmail.com" class="btn btn-primary">
+                                    <i class="fas fa-envelope me-2"></i>E-mail
+                                </a>
+                                <a href="https://www.instagram.com/vieira_ferr/profilecard/?igsh=MWZjMDBzMGVnN3Z0dQ==" class="btn btn-danger">
+                                    <i class="fab fa-instagram me-2"></i>Instagram
+                                </a>
+                                <a href="https://www.linkedin.com/in/fernanda-vieira-de-oliveira/" class="btn btn-dark">
+                                    <i class="fab fa-linkedin-in me-2"></i>LinkedIn
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="index.html" class="text-muted">
+                    <i class="fas fa-arrow-left me-1"></i> Revisar detalhes do intercâmbio
+                </a>
+            </div>
+        </section>
+
+        
+    </div>
+
+    <!-- Javascript -->
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/invest.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>

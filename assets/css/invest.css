@@ -170,3 +170,218 @@
     padding: 8px 12px !important;
   }
 }
+
+/* Estilos otimizados para cards clicáveis */
+        .option-card {
+            transition: all 0.3s ease;
+            border: none;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .option-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .option-card:active {
+            transform: translateY(1px);
+        }
+
+        .card-body {
+            padding: 12px;
+            display: flex;
+            align-items: center;
+        }
+
+        .icon-container {
+            flex: 0 0 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .icon-circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-content {
+            flex: 1;
+            padding-left: 12px;
+        }
+
+        .card-title {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+            color: #2c3e50;
+        }
+
+        .card-desc {
+            font-size: 0.8rem;
+            color: #555;
+            margin-bottom: 0;
+        }
+
+        .card-arrow {
+            margin-left: 8px;
+            color: #888;
+            font-size: 0.9rem;
+            transition: transform 0.3s;
+        }
+
+        .option-card:hover .card-arrow {
+            transform: translateX(3px);
+            color: #2c3e50;
+        }
+
+        /* Versão desktop */
+        @media (min-width: 768px) {
+            .option-card {
+                height: 100%;
+            }
+            
+            .card-body {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+            
+            .icon-container {
+                flex: 0 0 auto;
+                margin-bottom: 12px;
+            }
+            
+            .icon-circle {
+                width: 60px;
+                height: 60px;
+            }
+            
+            .card-content {
+                padding-left: 0;
+            }
+            
+            .card-title {
+                font-size: 1.2rem;
+                margin-bottom: 8px;
+            }
+            
+            .card-desc {
+                font-size: 0.9rem;
+                margin-bottom: 12px;
+            }
+            
+            .card-arrow {
+                display: none;
+            }
+        }
+
+/* Adicione isso no seu CSS */
+    a.text-decoration-none {
+        text-decoration: none !important;
+    }
+    
+    /* Cores personalizadas para cada card */
+    .card-link-primary:hover .card-title,
+    .card-link-primary:focus .card-title {
+        color: #0d6efd !important; /* Azul do Bootstrap */
+        text-decoration: underline;
+        text-decoration-color: #0d6efd;
+    }
+    
+    .card-link-success:hover .card-title,
+    .card-link-success:focus .card-title {
+        color: #198754 !important; /* Verde do Bootstrap */
+        text-decoration: underline;
+        text-decoration-color: #198754;
+    }
+    
+    .card-link-warning:hover .card-title,
+    .card-link-warning:focus .card-title {
+        color: #ffc107 !important; /* Amarelo do Bootstrap */
+        text-decoration: underline;
+        text-decoration-color: #ffc107;
+    }
+    
+    /* Garante que a descrição nunca fique sublinhada */
+    .card-desc {
+        text-decoration: none !important;
+    }
+
+.bg-purple {
+    background-color: var(--bs-purple) !important;
+}
+
+/* Adicione isso ao seu arquivo CSS */
+#financial-proof {
+    /* Reset de estilos que conflitam */
+    .card, .card-body, .solution-card {
+        display: block !important;
+        overflow: visible !important;
+    }
+    
+    /* Layout mobile */
+    @media (max-width: 767px) {
+        .row {
+            flex-direction: column;
+            
+            > [class*="col-"] {
+                flex: 0 0 100%;
+                max-width: 100%;
+                padding: 0;
+            }
+        }
+        
+        .d-flex {
+            flex-direction: row !important;
+            align-items: flex-start;
+            
+            .me-3 {
+                margin-right: 1rem !important;
+            }
+        }
+        
+        .process-steps ol {
+            padding-left: 1.5rem;
+            
+            li {
+                margin-bottom: 1rem;
+            }
+        }
+        
+        .cta-buttons .btn {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+.video-container video {
+    max-height: 70vh; /* Limita a altura */
+    background-color: #000;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Adicione ao seu arquivo invest.css */
+.cta-section {
+    padding-top: 3rem !important;    /* 48px */
+    padding-bottom: 3rem !important; /* 48px */
+}
+
+/* Para telas pequenas */
+@media (max-width: 767.98px) {
+    .cta-section {
+        padding-top: 2rem !important;    /* 32px */
+        padding-bottom: 2rem !important; /* 32px */
+    }
+}
