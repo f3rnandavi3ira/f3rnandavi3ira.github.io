@@ -40,7 +40,7 @@ Isotope.js - Interactive portfolio filtering
 ImagesLoaded - Optimized image handling
 
 Font Awesome - Icon system 📁 Project Structure
-text
+
 intercambio-platform/
 ├── 📄 index.html                 # Landing page with live metrics
 ├── 📄 about_me.html             # Personal timeline & journey
